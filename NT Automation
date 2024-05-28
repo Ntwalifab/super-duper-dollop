@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente de Machines</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .machines {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .machine {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1em;
+            flex: 1 1 calc(33.333% - 2em);
+            box-sizing: border-box;
+        }
+        .machine img {
+            max-width: 100%;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 1em;
+        }
+        .contact-form {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1em;
+            margin-top: 2em;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em 2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vente de Machines</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Nos Machines</h2>
+            <div class="machines">
+                <div class="machine">
+                    <img src="machine1.jpg" alt="Machine 1">
+                    <h3>Machine 1</h3>
+                    <p>Description de la machine 1.</p>
+                </div>
+                <div class="machine">
+                    <img src="machine2.jpg" alt="Machine 2">
+                    <h3>Machine 2</h3>
+                    <p>Description de la machine 2.</p>
+                </div>
+                <div class="machine">
+                    <img src="machine3.jpg" alt="Machine 3">
+                    <h3>Machine 3</h3>
+                    <p>Description de la machine 3.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <h2>Contactez-nous</h2>
+            <form action="mailto:votreadresseemail@example.com" method="post" enctype="text/plain">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
